@@ -63,7 +63,7 @@ class ProxyCore extends events.EventEmitter {
     } else if (this.proxyType === T_TYPE_HTTPS && !config.hostname) {
       throw new Error('hostname is required in https proxy');
     } else if (!this.proxyPort) {
-      throw new Error('proxy port is required');
+      throw new Error('proxy port be required');
     } else if (!this.recorder) {
       throw new Error('recorder is required');
     } else if (config.forceProxyHttps && config.rule && config.rule.beforeDealHttpsRequest) {
